@@ -39,7 +39,7 @@ class _PageOneState extends State<PageOne> {
                       style: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold),
                     ),
-                    subtitle: Text(word['meanings']),
+                    subtitle: Text('   ' + word['meanings']),
                     onTap: () {},
                   ),
                 );
