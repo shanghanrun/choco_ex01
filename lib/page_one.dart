@@ -31,15 +31,17 @@ class _PageOneState extends State<PageOne> {
               itemCount: displayingList.length,
               itemBuilder: (context, i) {
                 Map<String, dynamic> word = displayingList[i];
-                return ListTile(
-                  leading: loadImage(word),
-                  title: Text(
-                    '  ${word['word']}',
-                    style: const TextStyle(
-                        fontSize: 20, fontWeight: FontWeight.bold),
+                return Card(
+                  child: ListTile(
+                    leading: loadImage(word),
+                    title: Text(
+                      '  ${word['word']}',
+                      style: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(word['meanings']),
+                    onTap: () {},
                   ),
-                  subtitle: Text(word['meanings']),
-                  onTap: () {},
                 );
               }),
         ),
@@ -48,11 +50,19 @@ class _PageOneState extends State<PageOne> {
   }
 
   Widget loadImage(Map word) {
-    return Image.asset(
-      word['image1'],
-      height: 80,
-      width: 70,
-      fit: BoxFit.fill,
+    return Container(
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: const Color.fromARGB(255, 156, 150, 156).withOpacity(0.5),
+            spreadRadius: 2,
+            blurRadius: 12,
+            offset: const Offset(3, 3),
+          ),
+        ],
+      ),
+      child:
+          Image.asset(word['image1'], height: 80, width: 70, fit: BoxFit.fill),
     );
   }
 }
