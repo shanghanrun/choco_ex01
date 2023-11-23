@@ -29,7 +29,7 @@ class _PageOneState extends State<PageOne> {
         decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              color: const Color.fromARGB(255, 236, 242, 252).withOpacity(0.5),
+              color: const Color.fromARGB(255, 244, 247, 253).withOpacity(0.5),
               spreadRadius: 2,
               blurRadius: 12,
               offset: const Offset(3, 3),
@@ -38,7 +38,7 @@ class _PageOneState extends State<PageOne> {
         ),
         child: Center(
           child: ListView.builder(
-              itemExtent: 120,
+              // itemExtent: 140,
               itemCount: displayingList.length,
               itemBuilder: (context, i) {
                 Map<String, dynamic> word = displayingList[i];
@@ -52,8 +52,8 @@ class _PageOneState extends State<PageOne> {
                     children: [
                       const SizedBox(width: 10),
                       SizedBox(
-                        width: 110,
-                        height: 80,
+                        width: 120,
+                        height: 100,
                         child: loadImage(imageName),
                       ),
                       const SizedBox(width: 30), // 이미지와 텍스트 사이 간격 조정
@@ -65,7 +65,7 @@ class _PageOneState extends State<PageOne> {
                             Text(
                               wordName,
                               style: const TextStyle(
-                                fontSize: 25,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -73,10 +73,11 @@ class _PageOneState extends State<PageOne> {
                             Text(
                               meanings,
                               style: const TextStyle(
-                                fontSize: 16,
+                                fontSize: 13,
                                 color: Color.fromARGB(255, 50, 60, 80),
                               ),
                             ),
+                            const SizedBox(height: 10),
                           ],
                         ),
                       ),
@@ -101,7 +102,7 @@ class _PageOneState extends State<PageOne> {
           ),
         ],
       ),
-      child: Image.asset(imageName, height: 80, width: 110, fit: BoxFit.fill),
+      child: Image.asset(imageName, height: 90, width: 110, fit: BoxFit.fill),
     );
   }
 }
