@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'detail.dart';
 import 'page_one.dart';
 // import 'page_two.dart';
 // import 'page_three.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           '/one': (context) => const PageOne(),
           // '/two': (context) => PageTwo(),
           // '/three': (context) => PageThree(),
-          // '/detail': (context) => Detail(),
+          '/detail': (context) => const Detail(),
           // '/detail2': (context) => Detail2(),
           // '/info': (context) => Info(),
           // '/sound': (context) => SoundPage(),

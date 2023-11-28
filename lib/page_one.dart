@@ -41,47 +41,53 @@ class _PageOneState extends State<PageOne> {
               // itemExtent: 140,
               itemCount: displayingList.length,
               itemBuilder: (context, i) {
-                Map<String, dynamic> word = displayingList[i];
-                String imageName = word['image1'];
-                String wordName = word['word'];
-                String meanings = word['meanings'];
-                return Card(
-                  elevation: 5,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const SizedBox(width: 10),
-                      SizedBox(
-                        width: 120,
-                        height: 100,
-                        child: loadImage(imageName),
-                      ),
-                      const SizedBox(width: 30), // 이미지와 텍스트 사이 간격 조정
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              wordName,
-                              style: const TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            const SizedBox(height: 5), // 텍스트 사이 간격 조정
-                            Text(
-                              meanings,
-                              style: const TextStyle(
-                                fontSize: 13,
-                                color: Color.fromARGB(255, 50, 60, 80),
-                              ),
-                            ),
-                            const SizedBox(height: 10),
-                          ],
+                Map<String, dynamic> wordMap = displayingList[i];
+                String imageName = wordMap['image1'];
+                String wordName = wordMap['word'];
+                String meanings = wordMap['meanings'];
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/detail',
+                        arguments: {'arg1': wordMap, 'arg2': i});
+                  },
+                  child: Card(
+                    elevation: 5,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const SizedBox(width: 10),
+                        SizedBox(
+                          width: 120,
+                          height: 100,
+                          child: loadImage(imageName),
                         ),
-                      ),
-                    ],
+                        const SizedBox(width: 30), // 이미지와 텍스트 사이 간격 조정
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                wordName,
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(height: 5), // 텍스트 사이 간격 조정
+                              Text(
+                                meanings,
+                                style: const TextStyle(
+                                  fontSize: 13,
+                                  color: Color.fromARGB(255, 50, 60, 80),
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               }),
