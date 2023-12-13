@@ -5,19 +5,18 @@ class Detail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Map<String, dynamic> args =
+    Map<String, dynamic> arguments =
         ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-    Map<String, dynamic> wordMap = args['arg1'];
-    int index = args['arg2'];
+    Map<String, dynamic> word = arguments['arg1'];
 
     return Scaffold(
-      appBar: AppBar(title: Text(wordMap['word'])),
+      appBar: AppBar(title: Text(word['title'])),
       body: Center(
         child: Column(
           children: [
-            Image.asset(wordMap['image1'], width: 200, fit: BoxFit.fill),
-            Text(wordMap['meanings']),
-            Text(wordMap['comment1']),
+            Image.asset(word['image1'], width: 200, fit: BoxFit.fill),
+            Text(word['meanings']),
+            Text(word['comment1']),
           ],
         ),
       ),

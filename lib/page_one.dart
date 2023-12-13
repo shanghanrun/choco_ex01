@@ -8,21 +8,48 @@ class PageOne extends StatefulWidget {
 }
 
 class _PageOneState extends State<PageOne> {
-  List<Map<String, dynamic>> words = dic;
-  List<Map<String, dynamic>> sortedWords = [];
+  List<Map<String, dynamic>> list = dic;
+  List<Map<String, dynamic>> sortedList = [];
   bool isSorted = false;
+
+  @override
+  void initState() {
+    super.initState();
+    //Dart에서는 클래스의 필드 초기화 시점에 메소드를 실행할 수 없다.
+    // 그래서 initState에서 sortedWords에 sort()메서드를 사용한다.
+    sortedList = List.from(list); //정렬를 하기 전에 복사. list와 분리
+    sortedList
+        .sort((a, b) => (a['word'] as String).compareTo(b['word'] as String));
+  }
+
   @override
   Widget build(BuildContext context) {
-    List<Map<String, dynamic>> displayingList = isSorted ? sortedWords : words;
+    List<Map<String, dynamic>> displayingList = isSorted ? sortedList : list;
     return Scaffold(
       appBar: AppBar(
         title: const Text('영어 다의어'),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/settings');
+            },
           ),
           const SizedBox(width: 8),
+        ],
+      ),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          // const SizedBox(width: 16),
+          ElevatedButton(
+            onPressed: () {
+              setState(() {
+                isSorted = !isSorted;
+              });
+            },
+            child: Text(isSorted ? '원래 순서대로' : '알파벳순'),
+          ),
         ],
       ),
       body: Container(
@@ -38,17 +65,16 @@ class _PageOneState extends State<PageOne> {
         ),
         child: Center(
           child: ListView.builder(
-              // itemExtent: 140,
               itemCount: displayingList.length,
               itemBuilder: (context, i) {
-                Map<String, dynamic> wordMap = displayingList[i];
-                String imageName = wordMap['image1'];
-                String wordName = wordMap['word'];
-                String meanings = wordMap['meanings'];
+                Map<String, dynamic> word = displayingList[i];
+                String imageName = word['image1'];
+                String wordName = word['title'];
+                String meanings = word['meanings'];
                 return GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/detail',
-                        arguments: {'arg1': wordMap, 'arg2': i});
+                        arguments: {'arg1': word});
                   },
                   child: Card(
                     elevation: 5,
