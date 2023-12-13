@@ -10,6 +10,7 @@ class PageOne extends StatefulWidget {
 class _PageOneState extends State<PageOne> {
   List<Map<String, dynamic>> list = dic;
   List<Map<String, dynamic>> sortedList = [];
+  List<Map<String, dynamic>> displayingList = [];
   bool isSorted = false;
   int selectedIndex = 0;
 
@@ -22,6 +23,8 @@ class _PageOneState extends State<PageOne> {
       Navigator.pushNamed(context, '/two');
     } else if (index == 1) {
       Navigator.pushNamed(context, '/three');
+    } else if (index == 2) {
+      Navigator.pushNamed(context, '/sound');
     }
   }
 
@@ -32,12 +35,12 @@ class _PageOneState extends State<PageOne> {
     // 그래서 initState에서 sortedWords에 sort()메서드를 사용한다.
     sortedList = List.from(list); //정렬를 하기 전에 복사. list와 분리
     sortedList
-        .sort((a, b) => (a['word'] as String).compareTo(b['word'] as String));
+        .sort((a, b) => (a['title'] as String).compareTo(b['title'] as String));
   }
 
   @override
   Widget build(BuildContext context) {
-    List<Map<String, dynamic>> displayingList = isSorted ? sortedList : list;
+    final displayingList = isSorted ? sortedList : list;
     return Scaffold(
       appBar: AppBar(
         title: const Text('영어 다의어'),
@@ -54,14 +57,21 @@ class _PageOneState extends State<PageOne> {
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // const SizedBox(width: 16),
+          const SizedBox(width: 16),
           ElevatedButton(
             onPressed: () {
               setState(() {
                 isSorted = !isSorted;
               });
             },
-            child: Text(isSorted ? '원래 순서대로' : '알파벳순'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor:
+                  const Color.fromARGB(255, 254, 183, 236), // 이곳에 배경색을 지정합니다
+            ),
+            child: Text(
+              isSorted ? '원래 순서대로' : '알파벳순',
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
         ],
       ),
@@ -82,7 +92,7 @@ class _PageOneState extends State<PageOne> {
               itemBuilder: (context, i) {
                 Map<String, dynamic> word = displayingList[i];
                 String imageName = word['image1'];
-                String wordName = word['title'];
+                String wordTitle = word['title'];
                 String meanings = word['meanings'];
                 return GestureDetector(
                   onTap: () {
@@ -91,6 +101,7 @@ class _PageOneState extends State<PageOne> {
                   },
                   child: Card(
                     elevation: 5,
+                    color: const Color.fromARGB(255, 239, 251, 240),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -107,7 +118,7 @@ class _PageOneState extends State<PageOne> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                wordName,
+                                wordTitle,
                                 style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
@@ -141,6 +152,10 @@ class _PageOneState extends State<PageOne> {
           BottomNavigationBarItem(
             icon: Icon(Icons.lightbulb),
             label: '가정법',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.language),
+            label: 'R/L ST F',
           ),
         ],
         currentIndex: selectedIndex,

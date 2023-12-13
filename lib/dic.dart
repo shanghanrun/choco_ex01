@@ -1392,7 +1392,7 @@ I’ve never been able to work her out. 그녀에 대해서 뭔가 해보려(풀
     'image3': null,
   },
   {
-    "word": "yield",
+    'title': "yield",
     "meanings": "생산하다; 양보하다; 갚다; 굴복하다",
     "comment1": '''
 중심의미: 주다(give, give up, return)
@@ -1951,7 +1951,7 @@ sprout 싹, 싹이 나다.  봄이 되면 단단한 땅을 뚫고 새싹이 솟�
     'image3': null,
   },
   {
-    "word": "cover",
+    'title': "cover",
     "meanings": "덮다; 감추다; 포함하다. 다루다. 걸쳐있다.; 보도하다.",
     "comment1": """
 중심의미: 덮다.
@@ -1993,7 +1993,7 @@ coverage: 영화촬영시, 동일한 연기 동작을 여러 각도에서 촬영
     "image3": null
   },
   {
-    "word": "reserve",
+    'title': "reserve",
     "meanings": '''
 예약하다; 보유하다  비축하다. 비축물; 보호구역
 reservoir [레’절버] 저수지, 급수장;비축 ;저장소
@@ -2017,7 +2017,7 @@ reserve area는 동물보호구역, 혹은 인디어보호구역 등으로,
     "image3": null
   },
   {
-    "word": "credit",
+    'title': "credit",
     "meanings": "신용; 명예, 인정; 학점을 주다",
     "comment1": '''
 중심의미: 믿음(신뢰)
@@ -2039,7 +2039,7 @@ My math class is worth three credits.
     "image3": null
   },
   {
-    "word": "subject",
+    'title': "subject",
     "meanings": "과목; 주제; ~받기 쉬운 ; ~하기 쉬운, ~하는 경향이 있는; ~에게 복종하는",
     "comment1": '''
 중심의미:sub(아래로)+ject(던지다)
@@ -2067,7 +2067,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "change",
+    'title': "change",
     "meanings": "바꾸다, 갈아타다; 잔돈",
     "comment1": "중학생이라도 change가  잔돈도 의미한다는 것은 알고 있어야죠?",
     "comment2": null,
@@ -2077,7 +2077,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "preserve",
+    'title': "preserve",
     "meanings": "보존하다.;  저장하다; 마음에 간직하다",
     "comment1": ''' 
 중심의미:미리저장하다.
@@ -2092,7 +2092,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "common",
+    'title': "common",
     "meanings": "공통의, 공동의; 보통의, 흔한",
     "comment1": ''' 
 공동의 내용이면, 너무나 흔하고, 보통의 것이 되죠.
@@ -2110,7 +2110,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "abuse",
+    'title': "abuse",
     "meanings": "남용하다; 학대하다",
     "comment1": '''
 쓸데 없이, 잘못되게 힘을 남용하는 것 ⇒ 학대하다.
@@ -2125,7 +2125,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "commit",
+    'title': "commit",
     "meanings": "전념하다.; 위임하다; 죄를 범하다.",
     "comment1": '''
 앞에서 살펴봤죠? 중심의미:모두를 바치다(all in)
@@ -2142,7 +2142,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "volume",
+    'title': "volume",
     "meanings": "책, 서적;  권(한권 두권); 양, 음량",
     "comment1": '''
 "중심의미: 용적
@@ -2158,7 +2158,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "mission",
+    'title': "mission",
     "meanings": "사명, 임무; 사절단; 전도",
     "comment1": '''
 중심의미:보내다(mit)
@@ -2172,7 +2172,7 @@ It is subject to change.
     "image3": null
   },
   {
-    "word": "close",
+    'title': "close",
     "meanings": "가까운, 친밀한; 결론, 종합",
     "comment1": '''
 중심의미:가까운
@@ -2196,7 +2196,7 @@ That was close!
     "image3": null
   },
   {
-    "word": "security",
+    'title': "security",
     "meanings": "보안, 안전; 유가증권; 단단히 고정하다; (힘들게)확보하다.",
     "comment1": '''
 secure는 ‘단단히 고정시키다’이라는 의미입니다.
@@ -2234,7 +2234,7 @@ security는 또한 '유가증권'을 뜻하기도 한다는데,
     "image3": null
   },
   {
-    "word": "tip",
+    'title': "tip",
     "meanings": "돌출된 끝; 봉사료; 요령, 암시;  가벼운 두드림",
     "comment1": '''
 중심의미: 아주 작은 것(끄트머리의 아주 작은 것)
@@ -2250,7 +2250,7 @@ security는 또한 '유가증권'을 뜻하기도 한다는데,
     "image3": null
   },
   {
-    "word": "plea",
+    'title': "plea",
     "meanings": "애원, 간청, 탄원; 변명",
     "comment1": '''
 please 제발 봐주세요.   저는 잘못한 게 정말로 없어요. 억울해요. 하는 게 plea.
@@ -2282,7 +2282,7 @@ How do you plead?
     "image3": null
   },
   {
-    "word": "grant",
+    'title': "grant",
     "meanings": "허가하다.;  (내키지 않지만) 인정하다.; 보조금",
     "comment1": '''
 중심의미: 허락해주는 것(허가하며 주는 것 give)
@@ -2301,7 +2301,7 @@ apply for a research grant
     "image3": null
   },
   {
-    "word": "but",
+    'title': "but",
     "meanings": "그러나; ~을 제외하고(except) ; 단지, 다만",
     "comment1": '''
 I had no choice but to sign the contract. 
@@ -2324,7 +2324,7 @@ I don’t think we’ll manage it. Still, we can but try.
     "image3": null
   },
   {
-    "word": "last",
+    'title': "last",
     "meanings": "가장~할 것 같지 않은;  마지막의;  지난번의;  지속되다",
     "comment1": '''
 중심의미: 계속 남아있다. 
@@ -2367,7 +2367,7 @@ He is [the last man] (in the world) I want to see.
     "image3": null
   },
   {
-    "word": "long",
+    'title': "long",
     "meanings": "긴; 바라다, 그리워하다",
     "comment1": '''
 중심의미: 오래, 길게 남다. (leave last와 유사한 감각)
@@ -2384,7 +2384,7 @@ long for ~  ~을 향해 계속 하다 = ~을 계속 바라다.
     "image3": null
   },
   {
-    "word": "well",
+    'title': "well",
     "meanings": "건강한; 아주 잘; 우물",
     "comment1": '''
 너무 쉬운 단어라서 우물만 외우면 되겠네요.
@@ -2400,7 +2400,7 @@ Workers capped an oil well to prevent oil from spilling.
     "image3": null
   },
   {
-    "word": "fit",
+    'title': "fit",
     "meanings": "적합한, 딱 맞는;  건강에 좋은;  발작(간질 발작 등)",
     "comment1": '''
 fit는 주로 '모양이 딱맞는'의미로 잘 사용되는 것 같습니다.
@@ -2425,7 +2425,7 @@ fit 는 f 단어로 '밖으로 특이하게 튀어나가는 모습'을 기본적
     "image3": null
   },
   {
-    "word": "good",
+    'title': "good",
     "meanings": "좋은;  상품(굿즈), 화물(goods)",
     "comment1": "복수형태로  화물, 상품으로 잘 사용됩니다.",
     "comment2": null,
@@ -2435,7 +2435,7 @@ fit 는 f 단어로 '밖으로 특이하게 튀어나가는 모습'을 기본적
     "image3": null
   },
   {
-    "word": "hold",
+    'title': "hold",
     "meanings": "잡다; 개최하다; 견디다, 버티다; 그대로 있다.멈추다.",
     "comment1": '''
 중심의미: 잡다. 관장하다. -> 어떤 모임을 관장하는 입장. 개최하다.
@@ -2458,7 +2458,7 @@ Hold on! Hold up! 하라고 하면 -> 그대로 계속 꽉 잡고 있어.  버�
     "image3": null
   },
   {
-    "word": "lead",
+    'title': "lead",
     "meanings": "(앞장서서) 이끌다; 선두; (발음 레드)납, 연필심.",
     "comment1": '''
 be in the lead  앞서고 있다. 우세하고 있다.
@@ -2477,7 +2477,7 @@ Excessive drinking can lead to stomach disorders.
     "image3": null
   },
   {
-    "word": "stick",
+    'title': "stick",
     "meanings": "찌르다(poke); 달라붙다, 고수하다.;  막대기",
     "comment1": '''
 중심의미: 찌르다.인 것으로 보입니다.
@@ -2494,7 +2494,7 @@ Excessive drinking can lead to stomach disorders.
     "image3": null
   },
   {
-    "word": "sound",
+    'title': "sound",
     "meanings": "울리다. 소리; 건전한",
     "comment1": '''
 sound가 소리나다인데. 왜 건전한의 의미가 있을까요?  
@@ -2512,7 +2512,7 @@ The kid returned home safe and sound.
     "image3": null
   },
   {
-    "word": "move",
+    'title': "move",
     "meanings": "움직이다. 이동하다.; 이사하다;  (사람을) 감동시키다",
     "comment1": ''' 
 이사가다, 감동시키다는 의미로 잘 사용됩니다.
@@ -2529,7 +2529,7 @@ The kid returned home safe and sound.
     "image3": null
   },
   {
-    "word": "want",
+    'title': "want",
     "meanings": "원하다; 부족(하다); 필요로 하다(need)",
     "comment1": '''
 중심의미는 그냥 부족하기 때문에 원하고 필요로하는 것이죠.
@@ -2542,7 +2542,7 @@ The kid returned home safe and sound.
     "image3": null
   },
   {
-    "word": "lot",
+    'title': "lot",
     "meanings": "땅, 토지(장소);  많음",
     "comment1": '''
 중심의미: 넓은 땅(부지)
@@ -2559,7 +2559,7 @@ parking lot 주차부지(주차 장소)
     "image3": null
   },
   {
-    "word": "patient",
+    'title': "patient",
     "meanings": "인내심 있는; 근면한; 환자",
     "comment1": '''
 중심의미: 참고 견디는.
@@ -2573,7 +2573,7 @@ parking lot 주차부지(주차 장소)
     "image3": null
   },
   {
-    "word": "toll",
+    'title': "toll",
     "meanings": "사망자수; 통행세",
     "comment1": '''
 이건 그냥 외워야 될 듯합니다. 톨게이트는 통행세 징수하는 곳이니, 쉽고,
@@ -2595,7 +2595,7 @@ The death toll continues to mount.
     "image3": null
   },
   {
-    "word": "culture",
+    'title': "culture",
     "meanings": "문화; 재배, 배양",
     "comment1": '''
 중심의미: cultivate(농사짓다.경작하다.)
@@ -2616,7 +2616,7 @@ The death toll continues to mount.
     "image3": null
   },
   {
-    "word": "solid",
+    'title': "solid",
     "meanings": "단단한, 고체의; 속이 꽉찬;  확실한; 순수한",
     "comment1": '''
 중심의미: 단단한(고체)
@@ -2645,7 +2645,7 @@ The strike was solid, supported by all the members.
     "image3": null
   },
   {
-    "word": "art",
+    'title': "art",
     "meanings": "미술, 예술;  기술",
     "comment1": '''
 중심의미: (사람) 손으로 만든 것
@@ -2668,7 +2668,7 @@ art가 손으로 만든 것이라고 알려주는 곳이 이 앱 말고 또 있�
     "image3": null
   },
   {
-    "word": "virtual",
+    'title': "virtual",
     "meanings": "(컴퓨터) 가상의, 허상의 ; 사실상의, 사실상 ~와 다름없는",
     "comment1": '''
 이 단어는 '가상의'라는 뜻과, '사실상의'라는 뜻이 서로 반대의미 처럼 공존하고 있습니다.
@@ -2705,7 +2705,7 @@ He married a virtual stranger. 그는 (누가 봐도) 사실상 전혀 모르는
     "image3": null
   },
   {
-    "word": "material",
+    'title': "material",
     "meanings": "물질의; 재료; 세속적인",
     "comment1": '''
 물질적인 것이 세속적인 것이 되죠. material girl 세속적인 그녀
@@ -2717,7 +2717,7 @@ He married a virtual stranger. 그는 (누가 봐도) 사실상 전혀 모르는
     "image3": null
   },
   {
-    "word": "promote",
+    'title': "promote",
     "meanings": "촉진하다; 선동하다.; 승진하다",
     "comment1": '''
 중심의미: 위로 올리는 것
@@ -2734,7 +2734,7 @@ get promotion 승진하다.
     "image3": null
   },
   {
-    "word": "reflect",
+    'title': "reflect",
     "meanings": "(거울, 유리위에 상을)비추다.; 빛등을 반사하다.; 반영하다.; 곰곰히 생각하다. 반추하다",
     "comment1": '''
 reflex 반사하다. 반사해서 비추다.  반사한다는 것은 온 방향으로 다시(back, 거꾸로) 돌려보내는 것이죠.
@@ -2751,7 +2751,7 @@ reflect는 다시 비추는 것입니다.
     "image3": null
   },
   {
-    "word": "comply",
+    'title': "comply",
     "meanings": "준수하다. 따르다.",
     "comment1": '''
 이 단어를 보다 잘 이해하기 위해서는 이 앱의 아래목록에 있는 R/L 관련 글에서
@@ -2778,7 +2778,7 @@ compliance 준수
     "image3": null
   },
   {
-    "word": "attain / retain",
+    'title': "attain / retain",
     "meanings": '''
 얻다, 획득하다.-> 이루다. 
 /보유하다. 함유하다.
@@ -2808,7 +2808,7 @@ a material that is designed to retain moisture.
     "image3": null
   },
   {
-    "word": "quarter",
+    'title': "quarter",
     "meanings": "1/4 ; 숙소;  방면, 지역",
     "comment1": '''
 중심의미: 나눈 구역
@@ -2824,7 +2824,7 @@ a material that is designed to retain moisture.
     "image3": null
   },
   {
-    "word": "bank",
+    'title': "bank",
     "meanings": "은행; 둑, 제방; 대륙붕",
     "comment1": '''
 중심의미: 쌓인 것.
@@ -2862,7 +2862,7 @@ a material that is designed to retain moisture.
     "image3": null
   },
   {
-    "word": "실력이 계단식으로 오르는 이유",
+    'title': "실력이 계단식으로 오르는 이유",
     "meanings": "시험문제는 언제나 random하게 주어진다.",
     "comment1": '''
 학생들 뿐만 아니라 모든 사람들이 답답해 하는 것 중의 하나가 "왜 노력한 만큼 성적(실력)이 안 오르는 걸까?"입니다.
