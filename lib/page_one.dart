@@ -11,6 +11,19 @@ class _PageOneState extends State<PageOne> {
   List<Map<String, dynamic>> list = dic;
   List<Map<String, dynamic>> sortedList = [];
   bool isSorted = false;
+  int selectedIndex = 0;
+
+  void onItemTapped(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
+    //탭에 따른 라우팅
+    if (index == 0) {
+      Navigator.pushNamed(context, '/two');
+    } else if (index == 1) {
+      Navigator.pushNamed(context, '/three');
+    }
+  }
 
   @override
   void initState() {
@@ -118,6 +131,22 @@ class _PageOneState extends State<PageOne> {
                 );
               }),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star),
+            label: '현재완료',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.lightbulb),
+            label: '가정법',
+          ),
+        ],
+        currentIndex: selectedIndex,
+        onTap: onItemTapped,
+        unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
       ),
     );
   }
